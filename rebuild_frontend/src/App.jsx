@@ -1,5 +1,6 @@
 import { Routes, Route, Link, Navigate, useLocation } from "react-router-dom";
 import Header from "./components/Header";
+import Register from "./components/Register";
 
 // temporary page
 
@@ -46,7 +47,7 @@ export default function App() {
                     <Routes>
                         <Route path="/" element={<Navigate to="/login" replace />} />
                         <Route path="/login" element={<Placeholder title="Login" />} />
-                        <Route path="/register" element={<Placeholder title="Register" />} />
+                        <Route path="/register" element={<Register title="Register" />} />
                         <Route path="/report" element={<Placeholder title="Report" />} />
                         <Route path="/reports" element={<Placeholder title="View Reports" />} />
                         <Route path="/myreports" element={<Placeholder title="My Reports" />} />
